@@ -1,3 +1,6 @@
 {
-  "C_Cpp.default.compilerPath": "/usr/bin/clang"
+  "C_Cpp.default.compilerPath": "/usr/bin/clang",
+  "C_Cpp.default.cStandard": "c17",
+  "C_Cpp.default.compilerArgs": ["-Wall", "-Wextra", "-Werror", "-Wpedantic"],
+  "C_Cpp.errorSquiggles": "enabled"
 }

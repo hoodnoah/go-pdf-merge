@@ -2,9 +2,11 @@
 
 #include "args.h"
 
-int main()
+int main(int argc, char *argv[])
 {
-  int result = twoPlusTwo();
-  printf("twoPlusTwo() = %d\n", result); // twoPlusTwo() = 4 (expected
-  return 0;
+  ArgsParser *args_parser = args_newArgsParser(argc, argv);
+
+  printf("argc: %d\n", args_parser->argc);
+
+  args_freeArgsParser(args_parser);
 }
