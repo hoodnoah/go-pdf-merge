@@ -7,23 +7,25 @@ project(
   DESCRIPTION "A simple PDF merge command line utility"
 )
 
-# main executable
-add_executable(pdfm
-  src/main.c
-)
-
-# libraries
-add_subdirectory(src/args)
-add_subdirectory(Unity)
-add_subdirectory(test)
-
-target_include_directories(pdfm PUBLIC src/args/include)
-
-target_link_libraries(pdfm PUBLIC args)
-
 # compiler flags
 set(CMAKE_C_FLAGS "-Wall -Wextra -Werror -Wpedantic")
 
 # c standard
 set(CMAKE_C_STANDARD 17)
 set(CMAKE_C_STANDARD_REQUIRED True)
+
+# main executable
+add_executable(pdfm
+  src/main.c
+)
+
+# libraries
+## subdirectories
+add_subdirectory(src/args)
+add_subdirectory(test)
+
+## include directories
+target_include_directories(pdfm PUBLIC src/args/include)
+
+## link libraries
+target_link_libraries(pdfm PUBLIC args)

@@ -1,2 +1,10 @@
 # Cmake
 build
+
+# C Build artefacts
+/*.o
+/*.log
+*.swp
+
+# Unity build artefacts
+Unity/build
