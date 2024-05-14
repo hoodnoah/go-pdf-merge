@@ -17,7 +17,20 @@
         "kind": "build",
         "isDefault": true
       },
-      "problemMatcher": ["$clangProblemMatcher"],
+      "problemMatcher": [
+        {
+          "owner": "cpp",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+          }
+        }
+      ],
       "detail": "Configure CMake project"
     },
     {
@@ -30,7 +43,20 @@
         "isDefault": true
       },
       "dependsOn": "CMake: configure",
-      "problemMatcher": ["$clangProblemMatcher"],
+      "problemMatcher": [
+        {
+          "owner": "cpp",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+          }
+        }
+      ],
       "detail": "Build CMake project"
     },
     {
@@ -41,7 +67,20 @@
         "kind": "test",
         "isDefault": true
       },
-      "problemMatcher": ["$clangProblemMatcher"],
+      "problemMatcher": [
+        {
+          "owner": "cpp",
+          "fileLocation": ["relative", "${workspaceFolder}"],
+          "pattern": {
+            "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+            "file": 1,
+            "line": 2,
+            "column": 3,
+            "severity": 4,
+            "message": 5
+          }
+        }
+      ],
       "detail": "Run unit tests"
     }
   ],
