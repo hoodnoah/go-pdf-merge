@@ -21,10 +21,3 @@ void test_tautology(void)
 {
   TEST_ASSERT_TRUE(1);
 }
-
-int main(void)
-{
-  UNITY_BEGIN();
-  RUN_TEST(test_tautology);
-  return UNITY_END();
-}

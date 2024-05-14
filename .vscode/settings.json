@@ -2,5 +2,8 @@
   "C_Cpp.default.compilerPath": "/usr/bin/clang",
   "C_Cpp.default.cStandard": "c17",
   "C_Cpp.default.compilerArgs": ["-Wall", "-Wextra", "-Werror", "-Wpedantic"],
-  "C_Cpp.errorSquiggles": "enabled"
+  "C_Cpp.errorSquiggles": "enabled",
+  "cmake.sourceDirectory": "${workspaceFolder}",
+  "cmake.buildDirectory": "${workspaceFolder}/build",
+  "cmake.configureOnOpen": true
 }

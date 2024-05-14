@@ -9,6 +9,8 @@ project(
 
 # compiler flags
 set(CMAKE_C_FLAGS "-Wall -Wextra -Werror -Wpedantic")
+set(CMAKE_C_FLAGS_DEBUG "-g -o0 -Wall -Wextra -Werror -Wpedantic")
+set(CMAKE_C_FLAGS_RELEASE "-O3 -Wall -Wextra -Werror -Wpedantic")
 
 # c standard
 set(CMAKE_C_STANDARD 17)
