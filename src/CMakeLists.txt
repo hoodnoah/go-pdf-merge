@@ -9,13 +9,13 @@ project(
 
 # main executable
 add_executable(pdfm
-  src/main.c
+  main.c
 )
 
 # libraries
-add_subdirectory(src/args)
+add_subdirectory(args)
 
-target_include_directories(pdfm PUBLIC src/args/include)
+target_include_directories(pdfm PUBLIC args/include)
 
 target_link_libraries(pdfm PUBLIC args)
 
